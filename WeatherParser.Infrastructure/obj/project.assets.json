@@ -818,6 +818,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "WeatherParser.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/WeatherParser.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WeatherParser.Domain.dll": {}
+        }
       }
     }
   },
@@ -2100,13 +2110,19 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "WeatherParser.Domain/1.0.0": {
+      "type": "project",
+      "path": "../WeatherParser.Domain/WeatherParser.Domain.csproj",
+      "msbuildProject": "../WeatherParser.Domain/WeatherParser.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 8.0.11",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.11",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.11"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.11",
+      "WeatherParser.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2135,7 +2151,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\RiderProjects\\WeatherParser\\WeatherParser.Domain\\WeatherParser.Domain.csproj": {
+              "projectPath": "D:\\RiderProjects\\WeatherParser\\WeatherParser.Domain\\WeatherParser.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

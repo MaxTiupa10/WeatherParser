@@ -4,6 +4,66 @@
     "D:\\RiderProjects\\WeatherParser\\WeatherParser.Infrastructure\\WeatherParser.Infrastructure.csproj": {}
   },
   "projects": {
+    "D:\\RiderProjects\\WeatherParser\\WeatherParser.Domain\\WeatherParser.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RiderProjects\\WeatherParser\\WeatherParser.Domain\\WeatherParser.Domain.csproj",
+        "projectName": "WeatherParser.Domain",
+        "projectPath": "D:\\RiderProjects\\WeatherParser\\WeatherParser.Domain\\WeatherParser.Domain.csproj",
+        "packagesPath": "C:\\Users\\tupam\\.nuget\\packages\\",
+        "outputPath": "D:\\RiderProjects\\WeatherParser\\WeatherParser.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tupam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\tupam\\.dotnet\\sdk\\8.0.420/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\RiderProjects\\WeatherParser\\WeatherParser.Infrastructure\\WeatherParser.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +87,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\RiderProjects\\WeatherParser\\WeatherParser.Domain\\WeatherParser.Domain.csproj": {
+                "projectPath": "D:\\RiderProjects\\WeatherParser\\WeatherParser.Domain\\WeatherParser.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
